@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hash"
+        android:layout_margin="50dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="created_at"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hash" />
+
+    <TextView
+        android:id="@+id/tv_source_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="source_account"
+        app:layout_constraintTop_toBottomOf="@+id/tv_created_at"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/tv_signatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="signatures"
+        app:layout_constraintTop_toBottomOf="@+id/tv_source_account"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <TextView
+        android:id="@+id/tv_envelope_xdr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="envelope_xdr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signatures"
+        tools:layout_editor_absoluteX="50dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
